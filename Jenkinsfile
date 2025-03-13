@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    sh 'git clone https://github.com/Surabhi-KC/Waste-Classification.git'
+                    sh 'git clone https://github.com/Surabhi-KC/CCweek1_Expt1_PES1UG22CS633.git'
                     dir('PES1UG22CS633_Jenkins') {  
                         sh 'git checkout main'
                     }
@@ -23,7 +23,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './output' 
+                    sh 'exit 1' 
                 }
             }
         }
