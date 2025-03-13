@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    sh 'git clone https://github.com/Surabhi-KC/CCweek1_Expt1_PES1UG22CS633.git'
+                    sh 'git clone https://github.com/Surabhi-KC/PES1UG22CS633_Jenkins.git'
                     dir('PES1UG22CS633_Jenkins') {  
                         sh 'git checkout main'
                     }
@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 build 'PES1UG22CS633-1'
-                sh 'g++ -o output main.cpp'  
+                sh 'g++ -o output working.cpp'  
             }
         }
 
