@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     sh 'git clone https://github.com/Surabhi-KC/PES1UG22CS633_Jenkins.git'
-                    dir('PES1UG22CS633_Jenkins') {  
+                    dir('PES1UG22CS633_Jenkins_1') {  
                         sh 'git checkout main'
                     }
                 }
