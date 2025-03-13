@@ -1,4 +1,33 @@
 hello_exec
-AppData/
-Application Data/
+# Ignore system & user files
+.DS_Store
+.bash_history
+.cache/
+.config/
+.vscode/
+.idea/
+.pki/
+.ssh/
+
+# Ignore Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore logs and temp files
+*.log
+*.tmp
+nohup.out
+
+# Ignore large datasets & binaries
+*.zip
+*.tar.gz
+*.exe
+*.o
+*.out
+
+# Ignore database and backup files
+database/
+backup/
+
 
