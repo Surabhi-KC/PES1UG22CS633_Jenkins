@@ -1,12 +1,20 @@
 pipeline {
     agent any
 
+    stage('Cleanup') {
+    steps {
+        echo 'Deleting the cloned repository...'
+        sh 'rm -rf PES1UG22CS633_Jenkins'  // Deletes the entire folder
+         }
+    }
+
+
     stages {
         stage('Clone Repository') {
             steps {
                 script {
                     sh 'git clone https://github.com/Surabhi-KC/PES1UG22CS633_Jenkins.git'
-                    dir('PES1UG22CS633_Jenkins_1') {  
+                    dir('PES1UG22CS633_Jenkins') {  
                         sh 'git checkout main'
                     }
                 }
